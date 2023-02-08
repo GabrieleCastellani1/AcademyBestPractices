@@ -30,8 +30,4 @@ public class Quadrilateral implements Shape {
     return height * width;
   }
 
-  @Override
-  public double calculateVolume() {
-    return 0;
-  }
 }
