@@ -30,7 +30,4 @@ public class AreaCalculator {
     return result;
   }
 
-  public String output() {
-    return "\tLa somma delle aree è: " + sum();
-  }
 }
