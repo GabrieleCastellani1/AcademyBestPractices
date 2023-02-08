@@ -1,19 +1,21 @@
 package it.euris.pojo;
 
-public class Square implements Shape {
-
-    private final double length;
+public class Square extends Rectangle {
 
     public Square(double length) {
-        this.length = length;
-    }
-
-    public double getLength() {
-        return this.length;
+        super(length, length);
     }
 
     @Override
-    public double calculateArea() {
-        return Math.pow(this.length, 2);
+    public void setWidth(double length) {
+        super.width = length;
+        super.height = length;
     }
+
+    @Override
+    public void setHeight(double length) {
+        super.width = length;
+        super.height = length;
+    }
+
 }
