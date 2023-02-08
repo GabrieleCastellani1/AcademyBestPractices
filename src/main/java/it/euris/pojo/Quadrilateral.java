@@ -29,4 +29,9 @@ public class Quadrilateral implements Shape {
   public double calculateArea() {
     return height * width;
   }
+
+  @Override
+  public double calculateVolume() {
+    return 0;
+  }
 }
