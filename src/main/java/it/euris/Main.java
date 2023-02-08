@@ -1,6 +1,7 @@
 package it.euris;
 
 import it.euris.pojo.Circle;
+import it.euris.pojo.Shape;
 import it.euris.pojo.Square;
 import it.euris.service.AreaCalculator;
 import it.euris.service.AreaCalculatorPrinter;
@@ -9,7 +10,7 @@ import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
-        Collection<Object> shapes = Set.of(
+        Collection<Shape> shapes = Set.of(
             new Circle(2),
             new Square(5),
             new Square(6)

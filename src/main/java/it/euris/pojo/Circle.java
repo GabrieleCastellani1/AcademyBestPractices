@@ -1,6 +1,6 @@
 package it.euris.pojo;
 
-public class Circle {
+public class Circle implements Shape {
 
     private final double radius;
 
@@ -12,4 +12,8 @@ public class Circle {
         return this.radius;
     }
 
+    @Override
+    public double calculateArea() {
+        return Math.pow(this.radius, 2) * Math.PI;
+    }
 }
