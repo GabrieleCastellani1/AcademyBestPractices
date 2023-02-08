@@ -1,13 +1,9 @@
 package it.euris.pojo;
 
-public class Rectangle implements Shape {
-
-  protected double width;
-  protected double height;
+public class Rectangle extends Quadrilateral {
 
   public Rectangle(double width, double height) {
-    this.width = width;
-    this.height = height;
+    super(width, height);
   }
 
   public void setWidth(double length) {

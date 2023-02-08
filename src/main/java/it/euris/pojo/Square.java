@@ -1,6 +1,6 @@
 package it.euris.pojo;
 
-public class Square extends Rectangle {
+public class Square extends Quadrilateral {
 
     public Square(double length) {
         super(length, length);
