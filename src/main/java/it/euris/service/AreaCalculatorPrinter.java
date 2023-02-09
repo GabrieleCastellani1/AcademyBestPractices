@@ -5,13 +5,17 @@ import java.util.Collection;
 
 public class AreaCalculatorPrinter {
 
-  public String printHtml(Collection<Shape> shapes) {
-    AreaCalculator areaCalculator = new AreaCalculator(shapes);
+  private final AreaCalculator areaCalculator;
+
+  public AreaCalculatorPrinter(AreaCalculator areaCalculator) {
+    this.areaCalculator = areaCalculator;
+  }
+
+  public String printHtml() {
     return "<sum total=" + areaCalculator.sum() + "/>";
   }
 
-  public String printJson(Collection<Shape> shapes) {
-    AreaCalculator areaCalculator = new AreaCalculator(shapes);
+  public String printJson() {
     return "{ \"sum\": { \"total\":" + areaCalculator.sum() + "} }";
   }
 

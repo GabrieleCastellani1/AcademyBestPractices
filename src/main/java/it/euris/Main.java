@@ -18,10 +18,12 @@ public class Main {
         new Square(5),
         new Square(6)
     );
-    AreaCalculatorPrinter printer = new AreaCalculatorPrinter();
 
-    System.out.println(printer.printHtml(shapes));
-    System.out.println(printer.printJson(shapes));
+    AreaCalculator areaCalculator = new AreaCalculator(shapes);
+    AreaCalculatorPrinter printer = new AreaCalculatorPrinter(areaCalculator);
+
+    System.out.println(printer.printHtml());
+    System.out.println(printer.printJson());
 
     /////////////// Liskov compliant
 
